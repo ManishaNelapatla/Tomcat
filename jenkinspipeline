@@ -33,7 +33,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying to Tomcat...'
-                bat 'mvn tomcat7:deploy'
+                bat 'mvn -X tomcat7:deploy'
             }
         }
     }
